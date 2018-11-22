@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for c in comment %}
+<div class="container-fluid">
+<div class="card-deck">
+  <div class="card">
+  <div class="card-title">
+    <h5>Author: {{c.author}}</h5>
+  </div>
+  <div class="card-body">
+    <p>{{c.comment}}</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+{% endfor %}
+{% endblock %}

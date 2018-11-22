@@ -1,0 +1,35 @@
+{% block content %}
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-title">
+        <h4>{{user.username}}</h4>
+      </div>
+      <div class="card-body">
+        <p> Edit your Blogs</p>
+      </div>
+    </div>
+  </div>
+  {% for blog in blogs %}
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-body">
+        <p>{{blog.blog}}</p>
+        <a href="/pro-comment/{{blog.id}}"style="float:right">View Comments</a>
+
+
+        <a href="/blog/edit/{{blog.id}}"style="text-align: centre;">Edit Blog</a>
+
+
+
+
+        <a href="/blog/{{blog.id}}" style="color:red;">Delete Blog</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+{% endblock%}

@@ -1,0 +1,3 @@
+Hello {{user.username}}
+
+Thank you for your subscription on personal blog..enjoy blogging and do not forget to leave a comment.
