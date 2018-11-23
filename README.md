@@ -3,7 +3,7 @@
 
 ## Author
 
-####### Odipo James
+## Odipo James
 
 **Description**
 
